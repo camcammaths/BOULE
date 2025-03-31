@@ -16,8 +16,10 @@ body {
 .boule {
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle at 30% 30%, #ffffff, #ff5733);
     border-radius: 50%;
+    background-image: url('boule_1.png'); 
+    background-size: cover; 
+    background-position: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
