@@ -3,35 +3,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    background-color: #f0f0f0;
     margin: 0;
 }
 
 .container {
     position: relative;
-    width: 150px;
-    height: 150px;
 }
 
-.boule {
-    width: 100px;
+#boule {
+    width: 100px;  /* Ajuste la taille selon ton image */
     height: 100px;
-    border-radius: 50%;
-    background-image: url('boule.1.png'); 
-    background-position: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 2s linear infinite;
+    animation: rotate 2s linear infinite;
 }
 
-@keyframes spin {
+@keyframes rotate {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
